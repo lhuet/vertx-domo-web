@@ -11,7 +11,7 @@ public class MainWebVerticle extends BusModBase {
     public void start() {
         super.start();
 
-        container.deployVerticle("fr.lhuet.teleinfo.WebVerticle", config.getObject("webserver"));
+        container.deployVerticle("fr.lhuet.WebVerticle", config.getObject("webserver"));
 
         logger.info("MainWebVerticle launched");
 
