@@ -2,11 +2,7 @@
     "webserver": {
         "port":3100,
         "host":"0.0.0.0",
-        "web_root":"/home/debian/teleinfo-app/public",
+        "web_root":"/home/lhuet/dev/hardware/IoTChallenge/teleinfo-app/public",
         "route_matcher":true
-    },
-    "dhw-system": {
-        "dhw":"/sys/bus/w1/devices/28-000003c2471d/w1_slave",
-        "buffer-storage":"/sys/bus/w1/devices/28-000003a5aacc/w1_slave"
     }
 }
