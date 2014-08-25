@@ -12,7 +12,7 @@ public class DomesticHotWater {
     public static EventBus eb;
 
     public static void getDhwTemp(HttpServerRequest req) {
-        eb.send("dhw-temp", "dhw", (Message<String> msg) -> req.response().end(msg.body()) );
+        eb.send("dhw-temp", "dhw", (Message<String> msg) -> req.response().end(String.valueOf(msg.body())) );
     }
 
     public static void getBufferTemp(HttpServerRequest req) {
